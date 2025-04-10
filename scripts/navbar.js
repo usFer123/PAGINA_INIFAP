@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navbarContainer.innerHTML = `
           <header>
               <div class="interior">
-                  <a href="../public/index.html" class="logo"><img src="../img/logo.png" alt="Logo"></a>
+                  <a href="../index.html" class="logo"><img src="../img/logo.png" alt="Logo"></a>
                   <button class="nav-toggle" aria-label="Toggle navigation">
                       <i class="fas fa-bars"></i>
                   </button>
