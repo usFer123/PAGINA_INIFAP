@@ -96,7 +96,7 @@ h1.sidebar-active {
   left: 0;
   transform: translateY(-50%);
   z-index: 1000;
-  background: #2196f3;
+  background: #000000;
   color: white;
   border: none;
   padding: 15px 10px;
