@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigadores</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/researchers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../scripts/researches.js"></script>
+    <script src="../scripts/navbar.js" defer></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3><span>INVESTIGADORES</span></h3>
+        </div>
+    </section>
+    <h1>Investigadores</h1>
+
+    <button class="sidebar-toggle" id="menuToggle">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="card">
+                <h2><i class="fas fa-users"></i> Investigadores</h2>
+                <ul class="sidebar-list">
+                    <li><a href="#alcala" class="sidebar-link">
+                        <i class="fas fa-user-tie"></i> ALCALÁ OCHOA NOÉ
+                    </a></li>
+                    <li><a href="#ambriz" class="sidebar-link">
+                        <i class="fas fa-user-tie"></i> AMBRIZ VARGAS FABIAN
+                    </a></li>
+                    <li><a href="#martinez" class="sidebar-link">
+                        <i class="fas fa-user-tie"></i> MARTÍNEZ GONZÁLEZ CARLOS
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-magnifying-glass"></i> Programas de investigación</h2>
+                <ul class="sidebar-list">
+                    <li><a href="#optica" class="sidebar-link">
+                        <i class="fas fa-lightbulb"></i> Óptica y fotónica
+                    </a></li>
+                    <li><a href="#nanotecnologia" class="sidebar-link">
+                        <i class="fas fa-atom"></i> Nanotecnología y materiales
+                    </a></li>
+                    <li><a href="#biofotonica" class="sidebar-link">
+                        <i class="fas fa-dna"></i> Biofotónica
+                    </a></li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-flask"></i> Laboratorios</h2>
+                <ul class="sidebar-list">
+                    <li><a href="#lab-microscopia" class="sidebar-link">
+                        <i class="fas fa-microscope"></i> Microscopía avanzada
+                    </a></li>
+                    <li><a href="#lab-nanofabricacion" class="sidebar-link">
+                        <i class="fas fa-microchip"></i> Nanofabricación
+                    </a></li>
+                    <li><a href="#lab-optica" class="sidebar-link">
+                        <i class="fas fa-laser-pointer"></i> Óptica no lineal
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="researcher-name">
+                <i class="fas fa-user-circle"></i>
+                ALCALÁ OCHOA NOÉ
+            </div>
+
+            <div class="researcher-info">
+                <div class="info-section">
+                    <h3><i class="fas fa-flask"></i> Líneas de investigación</h3>
+                    <ul>
+                        <li>Microscopía</li>
+                        <li>Tomografía ópticas</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-bullseye"></i> Áreas de impacto</h3>
+                    <ul>
+                        <li>Salud (óptica biomédica)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-globe"></i> Sitio web</h3>
+                    <ul>
+                        <!-- Empty for this researcher -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="researcher-name" id="ambriz">
+                <i class="fas fa-user-circle"></i>
+                AMBRIZ VARGAS FABIAN
+            </div>
+            
+            <div class="researcher-info">
+                <div class="info-section">
+                    <h3><i class="fas fa-flask"></i> Líneas de investigación</h3>
+                    <ul>
+                        <li>Fabricación de dispositivos electrónicos</li>
+                        <li>Estudios de mecanismos de crecimiento de películas delgadas</li>
+                        <li>Fabricación de sistemas de almacenamiento de energía</li>
+                        <li>Fabricación de sistemas de cosecha de energía eléctrica</li>
+                        <li>Técnicas de crecimiento de películas delgadas</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-bullseye"></i> Áreas de impacto</h3>
+                    <ul>
+                        <li>Energía</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-globe"></i> Sitio web</h3>
+                    <ul>
+                        <li><a href="#">Página de grupo</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="researcher-name" id="martinez">
+                <i class="fas fa-user-circle"></i>
+                GILBERTO ANZUETO SÁNCHEZ
+            </div>
+            
+            <div class="researcher-info">
+                <div class="info-section">
+                    <h3><i class="fas fa-flask"></i> Líneas de investigación</h3>
+                    <ul>
+                        <li>Láseres y dispositivos de fibra óptica</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-bullseye"></i> Áreas de impacto</h3>
+                    <ul>
+                        <li>Manufactura</li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3><i class="fas fa-globe"></i> Sitio web</h3>
+                    <ul>
+                        <li><a href="#">Página personal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>INIFAP</h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi porro, debitis incidunt sint fugit laudantium?</p>
+            </div>
+            <div class="footer-column">
+                <h3>Links útiles</h3>
+                <ul>
+                    <li><a href="#">Useful Link 1</a></li>
+                    <li><a href="#">Useful Link 2</a></li>
+                    <li><a href="#">Useful Link 3</a></li>
+                    <li><a href="#">Useful Link 4</a></li>
+                    <li><a href="#">Useful Link 5</a></li>
+                </ul>
+            </div>
+            <div class="footer-column map-column">
+    
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #333;
+    line-height: 1.6;
+  }
+  /*herramientas*/
+h1 {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      padding: 3rem 0 1.5rem 0;
+    }
+  }
+  
+  /* Estilos para la sección de Noticias */
+  .main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  
+  /* Modificar el contenedor de la imagen para hacerla más pequeña */
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .overlay-text h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .overlay-text .highlight {
+    font-weight: bold;
+    color: #4a6741;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .content p strong {
+    color: #4a6741;
+  }
+  
+  /* Footer Section */
+  .site-footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 60px 0;
+    margin-top: 60px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Updated map-column to make it fully responsive */
+  .map-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/mapa.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  /* Media queries para responsividad */
+  @media screen and (max-width: 767px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-column {
+      margin-bottom: 40px;
+    }
+  
+    .map-column {
+      order: 3; /* Move map to bottom on mobile */
+      min-height: 180px;
+      margin-top: 20px;
+      background-position: center;
+      width: 100%;
+    }
+  
+    .overlay-text {
+      bottom: 20px;
+      padding: 8px 15px;
+    }
+  
+    .overlay-text h2 {
+      font-size: 18px;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex: 0 0 45%;
+      margin-bottom: 30px;
+    }
+  
+    .map-column {
+      flex: 0 0 100%;
+      min-height: 250px;
+      margin-top: 20px;
+      background-position: center;
+    }
+  }
+  

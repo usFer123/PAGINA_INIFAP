@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact_us.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/contact_us.js" defer></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h1>Contáctanos</h1>
+                <p>
+                    Estamos aquí para ayudarte. Puedes contactarnos a través del formulario
+                    o utilizando la información de contacto a continuación.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>55 3871 8700 ext. 82501</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span href="/cdn-cgi/l/email-protection">reyes.luis@inifap.gob.mx / aguascalientes@inifap.gob.mx</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>INIFAP - Pabellón, 20678 Pabellón de Arteaga, Ags., México</span>
+                    </div>
+                </div>
+                
+                <div class="address-info">
+                    <strong>INIFAP - Pabellón</strong>
+                    <p>20678 Pabellón de Arteaga, Ags., México</p>
+                    <p>Tel: 55 3871 8700 ext. 82501</p>
+                    <a href="javascript:void(0);" id="location-btn" class="location-btn">
+                        <i class="fas fa-map-marked-alt"></i>Ver en Google Maps
+                    </a>
+                </div>
+                
+            </div>
+            
+            <div class="map-container">
+                <div id="map">
+                    <!-- El mapa se cargará aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="toast" class="toast">
+        <div class="toast-title" id="toast-title"></div>
+        <div class="toast-message" id="toast-message"></div>
+    </div>
+
+    <!-- Agregando el footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>INIFAP</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi porro, debitis incidunt sint fugit laudantium?</p>
+            </div>
+            <div class="footer-column">
+                <h3>Links útiles</h3>
+                <ul>
+                    <li><a href="#">Useful Link 1</a></li>
+                    <li><a href="#">Useful Link 2</a></li>
+                    <li><a href="#">Useful Link 3</a></li>
+                    <li><a href="#">Useful Link 4</a></li>
+                    <li><a href="#">Useful Link 5</a></li>
+                </ul>
+            </div>
+            <div class="footer-column map-column">
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
+

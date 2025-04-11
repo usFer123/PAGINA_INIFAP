@@ -1,0 +1,262 @@
+#banner {
+    padding: 0 50px;
+    background-image: url(../img/banner.png);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4rem;
+    /* Añadir espacio después del banner */
+  }
+  #banner::before {
+    content: "";
+    background: rgba(56, 62, 59, 0.501);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+  }
+  .contenido-banner {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenido-banner h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+  }
+  .contenido-banner h3 span {
+    font-weight: 600;
+  }
+  
+  /*herramientas*/
+  h1 {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    font-family: "Outfit", sans-serif;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      padding: 3rem 0 1.5rem 0;
+    }
+  }
+  
+  /* Estilos para la cuadrícula de artículos */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    /* Aumentar el padding vertical */
+  }
+  
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 4rem;
+    /* Aumentar el espacio entre grupos de artículos */
+  }
+  
+  .article-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    min-width: 60%;
+  }
+  
+  .image-label p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .article-content {
+    padding: 20px;
+  }
+  
+  .article-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .article-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.4;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #515151;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #banner {
+      margin-bottom: 2rem;
+      /* Reducir el espacio en móviles */
+    }
+  
+    .container {
+      padding: 1rem 15px;
+      /* Ajustar el padding en móviles */
+    }
+  
+    .article-grid {
+      margin-bottom: 2rem;
+      /* Reducir el espacio entre grupos en móviles */
+    }
+  }
+  
+  /* Footer Section */
+  .site-footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 60px 0;
+    margin-top: 60px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Updated map-column to make it fully responsive */
+  .map-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/mapa.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-column {
+      margin-bottom: 40px;
+    }
+  
+    .map-column {
+      order: 3; /* Move map to bottom on mobile */
+      min-height: 180px;
+      margin-top: 20px;
+      background-position: center;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex: 0 0 45%;
+      margin-bottom: 30px;
+    }
+  
+    .map-column {
+      flex: 0 0 100%;
+      min-height: 250px;
+      margin-top: 20px;
+      background-position: center;
+    }
+  }
+  
+  
