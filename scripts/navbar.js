@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   </button>
                   <nav class="navigation">
                       <ul>
-                          <li><a href="../public/us.html">Nosotros</a></li>
+                          <li><a href="./public/us.html">Nosotros</a></li>
                           <li class="submenu">
                               <a href="#">Investigación</a>
                               <ul class="children">
