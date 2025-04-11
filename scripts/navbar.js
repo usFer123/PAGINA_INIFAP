@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                               <ul class="children">
                                   <li><a href="../research/researchers.html">Investigadores</a></li>
                                   <li><a href="../research/res_prog.html">Programas de Investigación</a></li>
+                                   <li><a href="../research/laboratories.html">Laboratorios</a></li>
                               </ul>
                           </li>
                           <li class="submenu">
